@@ -8,20 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		D387E3732135E762005A995D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3722135E762005A995D /* AppDelegate.swift */; };
-		D387E3752135E762005A995D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3742135E762005A995D /* ViewController.swift */; };
-		D387E3782135E762005A995D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D387E3762135E762005A995D /* Main.storyboard */; };
 		D387E37A2135E762005A995D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D387E3792135E762005A995D /* Assets.xcassets */; };
 		D387E37D2135E762005A995D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D387E37B2135E762005A995D /* LaunchScreen.storyboard */; };
+		D387E38B2135E955005A995D /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E38A2135E955005A995D /* OrderListViewController.swift */; };
+		D387E38F2135E9BD005A995D /* DostavistaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E38E2135E9BD005A995D /* DostavistaApiClient.swift */; };
+		D387E3912135E9CB005A995D /* OrderDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3902135E9CB005A995D /* OrderDataProvider.swift */; };
+		D387E3932135EA62005A995D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3922135EA62005A995D /* Order.swift */; };
+		D387E3952135EB29005A995D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D387E3942135EB29005A995D /* Localizable.strings */; };
+		D387E3982135EB4C005A995D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3972135EB4C005A995D /* String+Localized.swift */; };
+		D387E39A2135ED1E005A995D /* DefaultOrderDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3992135ED1E005A995D /* DefaultOrderDataProvider.swift */; };
+		D387E39C2135EE6A005A995D /* DostavistaApiResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E39B2135EE6A005A995D /* DostavistaApiResponseDto.swift */; };
+		D387E39E2135EF4B005A995D /* DefaultDostavistaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E39D2135EF4B005A995D /* DefaultDostavistaApiClient.swift */; };
+		D387E3A02135F04A005A995D /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E39F2135F04A005A995D /* OrderDetailsViewController.swift */; };
+		D387E3AD2136B798005A995D /* DostavistaApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3AC2136B798005A995D /* DostavistaApiError.swift */; };
+		D387E3AF2136B8C1005A995D /* OrderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3AE2136B8C1005A995D /* OrderError.swift */; };
+		D387E3B12136BC48005A995D /* OrderListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3B02136BC48005A995D /* OrderListViewCell.swift */; };
+		D387E3B32136D0A0005A995D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387E3B22136D0A0005A995D /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D387E36F2135E762005A995D /* ios-mobile-interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mobile-interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D387E3722135E762005A995D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D387E3742135E762005A995D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D387E3772135E762005A995D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D387E3792135E762005A995D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D387E37C2135E762005A995D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D387E37E2135E762005A995D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D387E38A2135E955005A995D /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		D387E38E2135E9BD005A995D /* DostavistaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DostavistaApiClient.swift; sourceTree = "<group>"; };
+		D387E3902135E9CB005A995D /* OrderDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataProvider.swift; sourceTree = "<group>"; };
+		D387E3922135EA62005A995D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D387E3942135EB29005A995D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D387E3972135EB4C005A995D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		D387E3992135ED1E005A995D /* DefaultOrderDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOrderDataProvider.swift; sourceTree = "<group>"; };
+		D387E39B2135EE6A005A995D /* DostavistaApiResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DostavistaApiResponseDto.swift; sourceTree = "<group>"; };
+		D387E39D2135EF4B005A995D /* DefaultDostavistaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDostavistaApiClient.swift; sourceTree = "<group>"; };
+		D387E39F2135F04A005A995D /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		D387E3AC2136B798005A995D /* DostavistaApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DostavistaApiError.swift; sourceTree = "<group>"; };
+		D387E3AE2136B8C1005A995D /* OrderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderError.swift; sourceTree = "<group>"; };
+		D387E3B02136BC48005A995D /* OrderListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewCell.swift; sourceTree = "<group>"; };
+		D387E3B22136D0A0005A995D /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +78,82 @@
 		D387E3712135E762005A995D /* ios-mobile-interview */ = {
 			isa = PBXGroup;
 			children = (
+				D387E3962135EB39005A995D /* Utils */,
+				D387E3842135E89E005A995D /* Services */,
+				D387E3852135E89E005A995D /* UI */,
 				D387E3722135E762005A995D /* AppDelegate.swift */,
-				D387E3742135E762005A995D /* ViewController.swift */,
-				D387E3762135E762005A995D /* Main.storyboard */,
 				D387E3792135E762005A995D /* Assets.xcassets */,
 				D387E37B2135E762005A995D /* LaunchScreen.storyboard */,
 				D387E37E2135E762005A995D /* Info.plist */,
+				D387E3942135EB29005A995D /* Localizable.strings */,
 			);
 			path = "ios-mobile-interview";
+			sourceTree = "<group>";
+		};
+		D387E3842135E89E005A995D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D387E38D2135E9B0005A995D /* DostavistaApi */,
+				D387E38C2135E9B0005A995D /* Orders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D387E3852135E89E005A995D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D387E3892135E940005A995D /* OrderDetails */,
+				D387E3882135E940005A995D /* OrderList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D387E3882135E940005A995D /* OrderList */ = {
+			isa = PBXGroup;
+			children = (
+				D387E38A2135E955005A995D /* OrderListViewController.swift */,
+				D387E3B02136BC48005A995D /* OrderListViewCell.swift */,
+			);
+			path = OrderList;
+			sourceTree = "<group>";
+		};
+		D387E3892135E940005A995D /* OrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D387E39F2135F04A005A995D /* OrderDetailsViewController.swift */,
+			);
+			path = OrderDetails;
+			sourceTree = "<group>";
+		};
+		D387E38C2135E9B0005A995D /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				D387E3902135E9CB005A995D /* OrderDataProvider.swift */,
+				D387E3992135ED1E005A995D /* DefaultOrderDataProvider.swift */,
+				D387E3AE2136B8C1005A995D /* OrderError.swift */,
+				D387E3922135EA62005A995D /* Order.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		D387E38D2135E9B0005A995D /* DostavistaApi */ = {
+			isa = PBXGroup;
+			children = (
+				D387E38E2135E9BD005A995D /* DostavistaApiClient.swift */,
+				D387E39D2135EF4B005A995D /* DefaultDostavistaApiClient.swift */,
+				D387E3AC2136B798005A995D /* DostavistaApiError.swift */,
+				D387E39B2135EE6A005A995D /* DostavistaApiResponseDto.swift */,
+			);
+			path = DostavistaApi;
+			sourceTree = "<group>";
+		};
+		D387E3962135EB39005A995D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D387E3972135EB4C005A995D /* String+Localized.swift */,
+				D387E3B22136D0A0005A995D /* UIView+Constraints.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +188,7 @@
 				TargetAttributes = {
 					D387E36E2135E762005A995D = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,8 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D387E37D2135E762005A995D /* LaunchScreen.storyboard in Resources */,
+				D387E3952135EB29005A995D /* Localizable.strings in Resources */,
 				D387E37A2135E762005A995D /* Assets.xcassets in Resources */,
-				D387E3782135E762005A995D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +228,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D387E3752135E762005A995D /* ViewController.swift in Sources */,
+				D387E38F2135E9BD005A995D /* DostavistaApiClient.swift in Sources */,
+				D387E39A2135ED1E005A995D /* DefaultOrderDataProvider.swift in Sources */,
+				D387E3AD2136B798005A995D /* DostavistaApiError.swift in Sources */,
+				D387E3B32136D0A0005A995D /* UIView+Constraints.swift in Sources */,
 				D387E3732135E762005A995D /* AppDelegate.swift in Sources */,
+				D387E3932135EA62005A995D /* Order.swift in Sources */,
+				D387E3AF2136B8C1005A995D /* OrderError.swift in Sources */,
+				D387E38B2135E955005A995D /* OrderListViewController.swift in Sources */,
+				D387E3982135EB4C005A995D /* String+Localized.swift in Sources */,
+				D387E39E2135EF4B005A995D /* DefaultDostavistaApiClient.swift in Sources */,
+				D387E39C2135EE6A005A995D /* DostavistaApiResponseDto.swift in Sources */,
+				D387E3B12136BC48005A995D /* OrderListViewCell.swift in Sources */,
+				D387E3A02135F04A005A995D /* OrderDetailsViewController.swift in Sources */,
+				D387E3912135E9CB005A995D /* OrderDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D387E3762135E762005A995D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D387E3772135E762005A995D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D387E37B2135E762005A995D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -274,13 +370,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-mobile-interview/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.dostavista.ios-mobile-interview";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.bengus.ios-mobile-interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,13 +388,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-mobile-interview/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.dostavista.ios-mobile-interview";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.bengus.ios-mobile-interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
