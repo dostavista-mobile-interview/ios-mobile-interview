@@ -9,3 +9,4 @@
 "OrderListNavigationTitle" = "Заказы";
 "OrderNumberFormat_%@" = "№ %@";
 "ordersUpdatingFailed" = "Не удалось обновить данные о заказах";
+"Error" = "Ошибка";

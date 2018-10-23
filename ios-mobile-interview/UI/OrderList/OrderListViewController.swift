@@ -77,15 +77,25 @@ final class OrderListViewController:
     fileprivate var orders = [Order]()
     
     fileprivate func update() {
-        orderDataProvider.updateOrders() { [weak self] error in
+        orderDataProvider.updateOrders() { [weak self] orders, error in
             guard let strongSelf = self else { return }
             
+            if let error = error {
+                let alertController = UIAlertController(
+                    title: "Error".localized,
+                    message: error.localizedDescription,
+                    preferredStyle: .alert
+                )
+                strongSelf.present(alertController, animated: true, completion: nil)
+                return
+            }
+            
+            strongSelf.orders = orders
             strongSelf.reload()
         }
     }
     
     fileprivate func reload() {
-        self.orders = orderDataProvider.getOrders()
         tableView.reloadData()
     }
     

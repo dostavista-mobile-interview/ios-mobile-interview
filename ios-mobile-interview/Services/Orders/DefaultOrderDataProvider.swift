@@ -27,21 +27,11 @@ final class DefaultOrderDataProvider: OrderDataProvider {
     }
     
     
-    // MARK: Private
-    fileprivate var savedOrders = [Order]()
-    
-    
     // MARK: OrderDataProvider
-    func getOrders() -> [Order] {
-        return savedOrders
-    }
-    
-    func updateOrders(completion: @escaping (OrderError?) -> ()) {
-        dostavistaApiClient.updateOrders { [weak self] responseDto in
-            guard let strongSelf = self else { return }
-            
+    func updateOrders(completion: @escaping ([Order], OrderError?) -> ()) {
+        dostavistaApiClient.updateOrders { responseDto in            
             if let error = responseDto.error {
-                completion(OrderError.ordersUpdatingFailed(reasonError: error))
+                completion([], OrderError.ordersUpdatingFailed(reasonError: error))
                 return
             }
             
@@ -49,7 +39,7 @@ final class DefaultOrderDataProvider: OrderDataProvider {
                 let data = responseDto.data,
                 let ordersArray = data["orders"] as? [[String : Any]] else
             {
-                completion(OrderError.ordersUpdatingFailed(reasonError: nil))
+                completion([], OrderError.ordersUpdatingFailed(reasonError: nil))
                 return
             }
             
@@ -78,8 +68,7 @@ final class DefaultOrderDataProvider: OrderDataProvider {
                 fetchedOrders.append(order)
             }
         
-            strongSelf.savedOrders = fetchedOrders
-            completion(nil)
+            completion(fetchedOrders, nil)
         }
     }
 }

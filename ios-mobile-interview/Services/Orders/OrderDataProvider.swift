@@ -9,6 +9,5 @@
 import Foundation
 
 protocol OrderDataProvider: class {
-    func getOrders() -> [Order]
-    func updateOrders(completion: @escaping (OrderError?) -> ())
+    func updateOrders(completion: @escaping ([Order], OrderError?) -> ())
 }
