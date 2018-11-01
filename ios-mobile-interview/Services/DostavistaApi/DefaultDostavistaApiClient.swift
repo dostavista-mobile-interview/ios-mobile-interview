@@ -28,7 +28,7 @@ final class DefaultDostavistaApiClient: DostavistaApiClient {
     
     // MARK: DostavistaApiClient
     func updateOrders(completion: @escaping (DostavistaApiResponseDto) -> ()) {
-        let request = URLRequest(url: URL(string: "https://devtools.dostavista.ru/mobile-interview-api.php?limit=10")!)
+        let request = URLRequest(url: URL(string: "https://interviewtools.dv.team/mobile-interview-api.php?limit=10")!)
         
         let task = session.dataTask(with: request) { (taskData, taskResponse, taskError) in
             var error: Error?
