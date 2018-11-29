@@ -11,11 +11,7 @@ import UIKit
 fileprivate let OrderCellIdentidier = "OrderCell"
 fileprivate let OrderCellHeight: CGFloat = 75
 
-final class OrderListViewController:
-    UIViewController,
-    UITableViewDataSource,
-    UITableViewDelegate
-{
+final class OrderListViewController: UIViewController {
     // MARK: Dependencies
     fileprivate let orderDataProvider: OrderDataProvider
     
@@ -33,7 +29,7 @@ final class OrderListViewController:
     
     
     // MARK: Subviews
-    fileprivate let tableView: UITableView = {
+    fileprivate lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         // iOS 11 top inset
         if #available(iOS 11.0, *) {
@@ -103,8 +99,14 @@ final class OrderListViewController:
         let orderDetailsViewController = OrderDetailsViewController(order: order)
         navigationController?.pushViewController(orderDetailsViewController, animated: true)
     }
-    
-    
+}
+
+
+// MARK: Специально для любителей все в отдельном extension писать, "чтобы глаза не мозолило"
+extension OrderListViewController:
+    UITableViewDataSource,
+    UITableViewDelegate
+{
     // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orders.count

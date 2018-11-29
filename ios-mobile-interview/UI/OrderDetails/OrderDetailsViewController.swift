@@ -10,7 +10,7 @@ import UIKit
 
 final class OrderDetailsViewController: UIViewController {
     // MARK: Subviews
-    fileprivate let scrollView: UIScrollView = {
+    fileprivate lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
         scrollView.alwaysBounceVertical = true
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,7 +22,7 @@ final class OrderDetailsViewController: UIViewController {
         return scrollView
     }()
     
-    fileprivate let stackView: UIStackView = {
+    fileprivate lazy var stackView: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
         stackView.distribution = .fill
@@ -32,7 +32,7 @@ final class OrderDetailsViewController: UIViewController {
         return stackView
     }()
     
-    fileprivate let orderIdLabel: UILabel = {
+    fileprivate lazy var orderIdLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byTruncatingTail
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -40,7 +40,7 @@ final class OrderDetailsViewController: UIViewController {
         return label
     }()
     
-    fileprivate let dateLabel: UILabel = {
+    fileprivate lazy var dateLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byTruncatingTail
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -48,7 +48,7 @@ final class OrderDetailsViewController: UIViewController {
         return label
     }()
     
-    fileprivate let addressLabel: UILabel = {
+    fileprivate lazy var addressLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.lineBreakMode = .byTruncatingTail
         label.heightAnchor.constraint(equalToConstant: 30).isActive = true
@@ -56,7 +56,7 @@ final class OrderDetailsViewController: UIViewController {
         return label
     }()
     
-    fileprivate let textLabel: UILabel = {
+    fileprivate lazy var textLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
