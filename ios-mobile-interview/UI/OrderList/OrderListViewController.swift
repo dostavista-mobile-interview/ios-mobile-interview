@@ -33,7 +33,7 @@ final class OrderListViewController: UIViewController {
         let tableView = UITableView(frame: .zero)
         // iOS 11 top inset
         if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
+            tableView.contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.never
         } else {
             // Fallback on earlier versions
         }

@@ -2,7 +2,7 @@
 Приложение представляет собой один экран отображающий список заказов, получаемый с  сервера.
 Пример запроса:
 
-    https://interviewtools.dv.team/mobile-interview-api.php?since_id=42010&limit=10
+    https://externalwebhooks.dostavista.net/mobile-interview-api.php?since_id=42010&limit=10
 
 Пример ответа:
 

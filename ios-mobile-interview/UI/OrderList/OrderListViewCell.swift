@@ -34,7 +34,7 @@ final class OrderListViewCell: UITableViewCell {
     
     
     // MARK: Init
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         contentView.addSubview(orderIdLabel)
@@ -70,7 +70,7 @@ final class OrderListViewCell: UITableViewCell {
         super.layoutSubviews()
      
         let insets = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
-        let insettedBounds = UIEdgeInsetsInsetRect(contentView.bounds, insets)
+        let insettedBounds = contentView.bounds.inset(by: insets)
         
         let (firstLineFrame, secondLineFrame) = insettedBounds.divided(
             atDistance: insettedBounds.height / 2.0,
